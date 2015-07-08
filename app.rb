@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'redis'
 require 'securerandom'
-require 'debugger'
 
 
 module TinyDecay
@@ -14,7 +13,7 @@ module TinyDecay
       set :partials_dir, 'views/_partials'
     end
 
-    helpers do 
+    helpers do
       include Rack::Utils
     end
 
